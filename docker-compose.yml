@@ -1,0 +1,13 @@
+services:
+  mkdocs:
+    image: squidfunk/mkdocs-material:latest
+    container_name: mkdocs_manual
+    restart: unless-stopped
+    network_mode: bridge
+    ports:
+      - "8090:8000"  # 8090 fuera, 8000 dentro del contenedor
+    volumes:
+      - .:/docs      # Mapea la carpeta actual al contenedor
+    environment:
+      - TZ=Europe/Madrid
+    command: serve --dev-addr 0.0.0.0:8000

@@ -1,0 +1,59 @@
+# 1. Información General
+site_name: "Manual de TREE"
+site_url: https://mktree.strcloud.es  # Cambia esto por tu dominio real
+site_author: "STR"
+site_description: "Documentación oficial colaborativa de TREE"
+
+# 2. Configuración de GitHub (Crucial para que los usuarios colaboren)
+repo_url: https://github.com/tu-usuario/tu-repo-manual
+repo_name: "GitHub"
+edit_uri: edit/main/docs/  # Esto crea el botón "Editar esta página"
+
+# 3. Diseño y Apariencia (Tema Material)
+theme:
+  name: material
+  language: es  # Interfaz en español
+  logo: assets/logo.png # (Opcional) Pon tu logo en docs/assets/
+  favicon: assets/favicon.png
+  palette:
+    # Selector de modo claro/oscuro automático
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs      # Menú arriba tipo pestañas
+    - navigation.sections  # Secciones laterales
+    - navigation.expand    # Menús desplegados por defecto
+    - navigation.top       # Botón "ir arriba" al hacer scroll
+    - search.suggest       # Sugerencias al escribir en el buscador
+    - search.highlight     # Resalta las palabras encontradas
+    - content.code.copy    # Botón para copiar código al portapapeles
+
+# 4. Extensiones de Markdown (Para que se vea "Pro")
+markdown_extensions:
+  - admonition          # Cuadros de "Nota", "Peligro", "Consejo"
+  - pymdownx.details    # Secciones colapsables
+  - pymdownx.superfences # Bloques de código avanzados
+  - tables              # Tablas bonitas
+  - attr_list           # Para poder dar estilo a imágenes, etc.
+
+# 5. Estructura de Navegación (El orden de tu manual)
+nav:
+  - 'Inicio': index.md
+  - 'Guía de Usuario':
+      - 'Primeros Pasos': guia/instalacion.md
+      - 'Funciones Principales': guia/funciones.md
+  - 'Colaboración':
+      - 'Cómo ayudar': colaborar.md
+      - 'Normas de estilo': estilo.md
