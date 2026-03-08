@@ -1,4 +1,4 @@
-# 🤝 Cómo colaborar en este manual
+# 🤝 Cómo colaborar en el manual de TREE
 
 ¡Gracias por querer ayudarnos a mejorar! Este proyecto es de código abierto y nos encanta recibir aportaciones de la comunidad. No importa si es corregir una coma o escribir un tutorial entero, **toda ayuda es bienvenida**.
 
