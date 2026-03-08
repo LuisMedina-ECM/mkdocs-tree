@@ -5,9 +5,11 @@ site_author: "STR"
 site_description: "Documentación oficial colaborativa de TREE"
 
 # 2. Configuración de GitHub (Crucial para que los usuarios colaboren)
-repo_url: https://github.com/tu-usuario/tu-repo-manual
+repo_url: https://github.com/LuisMedina-ECM/mkdocs-tree
 repo_name: "GitHub"
 edit_uri: edit/main/docs/  # Esto crea el botón "Editar esta página"
+remote_name: origin
+remote_branch: main
 
 # 3. Diseño y Apariencia (Tema Material)
 theme:
@@ -33,6 +35,8 @@ theme:
         name: Cambiar a modo claro
   features:
     - navigation.tabs      # Menú arriba tipo pestañas
+    - content.action.edit
+    - content.action.view
     - navigation.sections  # Secciones laterales
     - navigation.expand    # Menús desplegados por defecto
     - navigation.top       # Botón "ir arriba" al hacer scroll
